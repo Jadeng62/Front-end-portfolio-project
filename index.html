@@ -9,33 +9,92 @@
     <title>Front-end Portfolio Project</title>
 </head>
 <body>
-    <h1>Updated Ice Cream Inventory</h1>
+    <h1 class="head">Updated Ice Cream Application</h1>
 
-    <input type="text" placeholder="Enter Name ..." required>
-    <input type="date">
+    <!-- <input type="text" placeholder="Enter Name ..." required id="">
+    <label for=""></label>
+    <input type="date"> -->
 
-    <nav>Flavors</nav>
-    <nav>About me</nav>
+    <a href="./inventory.html">Flavors</a>
+    <a href="./me.html">About me</a>
 
-    <h2>Welcome to our updated Ice cream inventory application where you will now be able to view the nutritional facts of the Ice creams in that you add to your inventory, so that you will know how much is safe for the day </h2>
+    <h2>Welcome to our updated Ice cream inventory application where you will now be able to view the nutritional facts of the Ice creams that you add to your inventory, so that you will know how much is safe for the day </h2>
 
     <section>
         <div>
             <p>We all have a favorite out of the big 3, What's yours ?!</p>
             <form> 
-                <option name="cream" id="cream">Original Flavors</option>
-                <select value="Vanilla">Vanilla</select>
-                <select value="Strawberry">Strawberry</select>
-                <select value="Chocolate">Chocolate</select>
+                <select name="cream" id="cream">
+                <option value="vanilla">Vanilla</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="chocolate">Chocolate</option>
+            </select>
+            <button>Submit</button><span>(Note that when you hit submit on your flavor you will see the nutritional values for that flavor directly Below)</span>
             </form>
 
-            <h3>We know that Ice cream is presented to us in times of celebration, but waht if your on a diet you would want ot know the calorie intake correct? 
-                <span>This where the app comes in you will enter your Ice cream and view the results </span>
+            <h3>We know that Ice cream is presented to us in times of celebration, but what if your on a diet you would want to know the calorie intake correct? 
+                <span>This is where the app comes in you will enter your Ice cream and view the results ! </span>
             </h3>
-            <ul></ul>
+            
         </div>
 
-        <div></div>
+        <div>
+            <aside>
+                <p>Nutritional Values:</p>
+                <ul>
+               
+                </ul>
+            </aside>
+        </div>
     </section>
+        <br>
+     <div>
+     <section>
+        <p>Here you can search and review ice cream flavors:</p>
+        <form id="flavorForm">
+            <input type="search" id="flavor-search" name="selector" placeholder="Enter ice cream flavor ...">
+            <button type="submit" id="searchButton">Search</button>
+            <button id="clear">Clear</button>
+        </form>
+        <div>
+            <h2 id="flavorDisplay">Flavor:</h2>
+            <ul id="flavorList">
+
+            </ul>
+            <button id="addButton">Add to flavors</button>
+        </div>
+        <div class="card-holder">
+            <ul id="cardList"></ul>
+        </div>
+     </section>
+     </div>
+     
 </body>
 </html>
+
+
+
+<!-- <main>
+    <p>Here is where you can see/select the flavors that you choose to review</p>
+    <br>
+    <div>
+       <article class="card">
+        <div>
+            <input type="search" name="selector" placeholder="Enter Ice Cream flavor...">
+            
+            <button id="find">Find</button>
+            <br>
+            <h2>Flavor:</h2>
+            <ul></ul>
+            <br>
+            <button id="add">Add to Flavors</button><button>Clear</button>
+        </div>
+        <div>
+            <div class="card-setup">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+       </article>
+    </div> -->

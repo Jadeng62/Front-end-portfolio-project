@@ -1,7 +1,59 @@
-/* Generaltags */
+@import url(https://www.toptal.com/designers/subtlepatterns/uploads/white_carbon.png);
 
+/* General-tags */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua
+};
+
+h1 {
+    margin: 20px, 50px,50px,50px;
+    padding-left: 200px;
+};
 
 /* Classes */
 
+.head {
+    text-align: center;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat();
+};
+
+.card-holder {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: ;
+
+    display: inline-block;
+    vertical-align: top;
+
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+
+    border-radius: 8px;
+    background-color: #fff;
+
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card-holder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card-holder ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-holder li {
+    margin-bottom: 10px;
+}
 
 /* ID's */
